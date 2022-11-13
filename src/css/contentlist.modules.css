@@ -1,0 +1,84 @@
+.content-list{
+    /* width: 100%; */
+    margin-top: 30px;
+}
+
+.contentlistTitle {
+    /* background-color: #ff7e00; */
+    padding: 5px 15px;
+    color: #fff; 
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.content-container {
+    display: flex;
+    margin-top: 10px;
+    padding: 5px 20px;
+    width: max-content;
+    transform: translateX(0px);
+    transition: all 1s ease;
+    overflow-x: auto;
+}
+
+.content-wrapper {
+    position: relative;
+    overflow-x: auto;
+}
+
+.content-wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+/* .wrapper > .sliderArrow {
+    width: 50px;
+    height: 100%;
+    background-color: rgb(255,255,255, 0.8);
+    color: orange;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+} */
+
+/* .scroll {
+    overflow: scroll;
+} */
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+@media only screen and (max-width: 769px){
+    .content-list{
+        margin-top: 10px;
+    }
+    .contentlistTitle {
+        font-size: 11px;
+        margin-left: 10px;
+        display: block;
+        padding: 0;
+    }
+
+    .info > .film-title {
+        font-size: 30px;
+    }
+
+    .content-container {
+        margin: 0;
+        padding: 5px 10px;
+        overflow-x: hidden;
+    }
+    .content-list-item {
+        width: 100px;
+        height: 120px;
+        margin-right: 5px;
+        border-radius: 5px;
+    }
+}

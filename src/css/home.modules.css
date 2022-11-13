@@ -1,0 +1,39 @@
+ .App {
+     background-color: #000;
+     overflow: hidden;
+ }
+
+ .h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+    margin: 50px 0;
+ }
+
+ .p {
+    color: #fff;
+    display: block;
+    text-align: center;
+ }
+
+ .home-body{
+    position: relative;
+ }
+
+ .bottom-body {
+   position: relative;
+   bottom: 30px;
+}
+ /* .bottom-body {
+    position:absolute;
+    bottom: 30
+ } */
+
+@media only screen and (max-width: 768px) {
+   .bottom-body {
+      position: relative;
+      bottom: 25px;
+   }
+}

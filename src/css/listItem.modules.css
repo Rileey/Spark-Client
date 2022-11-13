@@ -1,0 +1,169 @@
+.list-item-container{
+    /* height: 140px; */
+}
+
+.list-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    /* transition: 0.3s; */
+}
+
+.list-image-two {
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    right: 0px;
+    object-fit: cover;
+    transition: 0.3s; */
+}
+
+.listItem {
+    /* width: 225px; */
+    /* height: 140px; */
+    background-color: black;
+    color: #fff;
+    margin-right: 3px;
+    /* position: relative; */
+    /* cursor: pointer; */
+    /* z-index: 1; */
+    /* transition: 0.1s; */
+
+    width: 220px;
+    height: 130px;
+   /*  background-color: black;
+    color: #fff;
+    margin-right: 3px; */
+    /* border-radius: 5px; */
+    /* position: relative; */
+    /* cursor: pointer; */
+    /* z-index: 1; */
+    /* transition: 0.1s; */
+}
+
+.listItem-sm {
+    background-color: black;
+    color: #fff;
+    margin-right: 3px;
+    width: 220px;
+    height: 130px;
+}
+ 
+.listItem:hover {
+    width: 310px;
+    /* height: 300px; */
+    position: absolute;
+    top: -140px;
+    /* z-index: 999; */
+    transition: 0.1s; 
+}
+
+.listItem:hover > img{
+    height: 140px;
+    /* /* transition: 0.2s; */
+} 
+
+.listVideo {
+    width: 100%;
+    height: 140px;
+    border-radius: 5px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    /* z-index: 1; */
+}
+
+.itemInfo {
+    height: 170px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 5px;
+    background-color: black;
+}
+
+
+.itemIcon {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    align-self: center;
+    margin-right: 65px;
+    font-size: 16px;
+}
+
+.orange {
+    background-color: gold;
+    width: 500px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.now {
+    font-weight: 800;
+}
+
+.itemInfoTop {
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.limit {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    padding: 1px 3px;
+    margin: 0 10px;
+}
+
+.list-item-caption {
+    display: flex;
+    font-size: 15px;
+    /* margin-bottom: 10px;  */
+    margin: 7px 0;
+}
+
+.genre {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1024px){
+    .listItem {
+        width: 185px;
+        height: 100px;
+    }
+
+    .listItem-sm {
+        width: 185px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .listTitle {
+        color: #fff;
+        font-size: 11px;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+
+    .listItem {
+        width: 120px;
+        height: 75px;
+        margin-right: 3px;
+    }
+
+    .listItem-sm {
+        width: 120px;
+        height: 75px;
+        margin-right: 3px;
+    }
+}
