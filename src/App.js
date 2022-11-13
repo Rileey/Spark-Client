@@ -8,12 +8,12 @@ import Register from './pages/register';
 import { AuthContext } from './authContext/authContext'
 import SuccessPage from './pages/successpage';
 import Search from './pages/search';
-import Account from './components/account.js';
+import Account from './pages/account.js';
 
 
 
 function App() {
-  
+
   const { user } = useContext(AuthContext)
 
   return (

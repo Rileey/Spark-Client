@@ -98,13 +98,6 @@ const Register = () => {
             <div className="intro">
                 <span>Watch unlimited content to your hearts <strong className='strong'> content...</strong></span>
             </div>
-            {/* {submitted &&
-             (!emailRef.current.value || !usernameRef.current.value || !emailRef.current.value.includes('@'))
-              ? (
-                <p className="warning">Please input your username or password</p>
-              ) : null} */}
-            
-                {/* { !email ? ( */}
                     <div>
                     { submitted && 
                         !emailRef.current.value.includes("@")? 

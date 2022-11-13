@@ -1,10 +1,10 @@
 import '../css/account.modules.css'
 import { AuthContext } from '../authContext/authContext'
-import Navbar from './navbar'
+import Navbar from '../components/navbar'
 import card from '../images/mastercard.svg'
 import { useContext, useState, useEffect } from 'react'
 import axios from 'axios'
-import ProfileModal from '../components/profileModal'
+import PasswordModal from '../components/passwordModal'
 import { Link, useParams } from 'react-router-dom'
 import CameraAltRoundedIcon from '@mui/icons-material/CameraAltRounded';
 import Home from '../pages/home'
@@ -24,16 +24,16 @@ const Account = () => {
     const [name, setName] = useState(false)
     const [number, setNumber] = useState(false)
     const [bio, setBio] = useState(false)
-    // const {username} = useParams()
-    // const result = decodeURI(username)
+    const {id} = useParams()
+    const result = decodeURI(id)
 
     useEffect(() => {
         const getPerson = async () => {
-            const res = await axios.get(`/users/find/?username=${user?.username}`)
+            const res = await axios.get(`/users/find/?username=${result}`)
             setProfile(res.data)
         }
         getPerson()
-    }, [user?.username])
+    }, [result])
     
 
     const date = new Date(user.createdAt)
@@ -79,7 +79,6 @@ const Account = () => {
                 setLoading(false)
                 if (error){
                     setMessage('Username has been TAKEN!!!')
-                    console.log('just error---', error)
                 }
                 window.location.reload()
             } catch (err) {
@@ -92,14 +91,12 @@ const Account = () => {
     
 
     return(
-        // username !== user.username ? <Link to={`/profile/${username}`}><Home /></Link> : 
+        result !== user.username ? <Link to={`/`}><Home /></Link> : 
         <>
         <Navbar />
         {
                             show && (
-                                <ProfileModal
-                                //  post={post} 
-                                // profilePicture={profilePicture}
+                                <PasswordModal
                                  closeModal={setShow} show={show}/>
                             )
                         }

@@ -15,8 +15,6 @@ const Search = () => {
     // const [movies, setMovies] = useState([])
     const { movies, dispatch } = useContext(MovieContext)
     const [searchTerm, setSearchTerm] = useState("")
-    const [searchParams, setSearchParams] = useSearchParams()
-    // const [debouncedSearchTerm] = useDebounce(searchTerm, 500);
 
     useEffect(() => {
         getMovies(dispatch)
@@ -30,20 +28,9 @@ const Search = () => {
         
     }
 
-    // useEffect(() => {
-    //     const params = new URLSearchParams();
-    //     if (searchTerm) {  
-    //       params.append("q", searchTerm);
-    //       history({ search: params.toString() });
-    //     } else {
-    //       params.delete("q");
-    //     }
-    //   }, [searchTerm, history]);
-
   return (
       <>
-      {/* <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> */}
-      <Navbar />
+      <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <div className="search-background">
       <div className="search">
         <input className="searchs-input" type="text" name="" placeholder="Search..." id="" onChange={handleFilter} />

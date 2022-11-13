@@ -56,9 +56,6 @@ const Navbar = ({
                     <div className="dropdown">
                         <span style={{textDecoration: 'none', color: 'white', marginLeft: '20px'}}><KeyboardArrowDownOutlined/></span>
                         <div className="dropdown-content">
-                        <Link to='/' style={{textDecoration: 'none', color: 'white', padding: '10px 0', marginLeft: '50px'}} className='mennu'>
-                        <p>Home</p>
-                        </Link>
                         <Link to='/series' style={{textDecoration: 'none', color: 'white', padding: '10px 0', marginLeft: '50px'}} className='mennu'>
                         <p>Shows</p>
                         </Link>
@@ -69,9 +66,6 @@ const Navbar = ({
                     </div>
 
                     <div className="longbar">
-                        <Link to='/' style={{textDecoration: 'none', color: 'white', marginRight: '20px'}} className='mennu'>
-                        <span>Home</span>
-                        </Link>
                         <Link to='/series' style={{textDecoration: 'none', color: 'white', marginRight: '20px'}} className='mennu'>
                             <span>Shows</span>
                         </Link>

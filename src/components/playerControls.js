@@ -4,12 +4,10 @@ import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import Slider from '@material-ui/core/Slider'
 import Box from '@material-ui/core/Box'
-// import Stack  from "@mui/material/Stack"
 import Button from '@material-ui/core/Button'
 import Popover from '@material-ui/core/Popover'
 import { styled } from '@material-ui/core'
 import Tooltip from '@material-ui/core/Tooltip'
-// import Media from "react-media"
 import Media from 'react-media'
 import FastRewindIcon from '@material-ui/icons/FastRewind'
 import FastForwardIcon from '@material-ui/icons/FastForward';
@@ -19,7 +17,6 @@ import VolumeUpIcon from '@material-ui/icons/VolumeUp'
 import VolumeOffIcon from '@material-ui/icons/VolumeOff'
 import FullscreenIcon  from '@material-ui/icons/Fullscreen'
 import IconButton from '@material-ui/core/IconButton'
-// import Screenfull from 'screenfull'
 import FlipCameraAndroidRoundedIcon from '@mui/icons-material/FlipCameraAndroidRounded';
 
 

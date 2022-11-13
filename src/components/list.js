@@ -27,21 +27,20 @@ const List = ({list}) => {
     }
 
     return (
-        <>
+        <div className='movie-list'>
         <Media query = '(min-width: 945px)'>
       {
         matches => {
           return matches 
           ? (
         <div className='list'>
-            {/* <span className="listTitle">{list.title}</span> */}
+            <span className="listTitle">{list.title}</span>
             <div className="wrapper">
                 <ArrowBackIosOutlined 
                 className='sliderArrow left' 
                 onClick={()=>handleClick('left')}
                 style={{display: !isMoved && 'none'}}
                 />
-                {/* <HorizontalScroll className="scroll" style={{overflow:'visible', position:'relative'}}> */}
                 <div className="container" ref={listRef}>
                     {list.content.map((item, i) => (
                         <div key={i}>
@@ -51,7 +50,6 @@ const List = ({list}) => {
                         </div>
                     ))}
                 </div>
-                {/* </HorizontalScroll>  */}
                 <ArrowForwardIosOutlined 
                 className='sliderArrow-s right' 
                 onClick={()=>handleClick('right')}/>
@@ -74,7 +72,7 @@ const List = ({list}) => {
         </div>
           )}}
            </Media>
-        </>
+        </div>
     )
 }
 

@@ -1,18 +1,9 @@
 import React, { useContext, useState, useRef, useEffect } from 'react'
-import VideoCameraBackIcon from '@mui/icons-material/VideoCameraBack';
-import { ChatBubble, Favorite, FavoriteBorder, Home, Share, LocationOn, Person, Create, People, DashboardOutlined } from '@material-ui/icons'
-import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { Visibility, VisibilityOff } from '@material-ui/icons'
 import '../css/profilemodal.modules.css'
 import '../css/modal.modules.css'
-import picture from '../images/stockphoto.jpeg'
-import CameraAltRoundedIcon from '@mui/icons-material/CameraAltRounded';
 import { AuthContext } from '../authContext/authContext';
-
-
-
-
 
 
 const Modal = ({closeModal, profilePicture}) => {
@@ -23,14 +14,9 @@ const Modal = ({closeModal, profilePicture}) => {
     const [image, setImage] = useState({})
     const [person, setPerson] = useState({})
     const [message, setMessage] = useState('')
-    const [password, setPassword] = useState('')
-    const [newPassword, setNewPassword] = useState('')
-    const [confirmPassword, setConfirmPassword] = useState('')
     const [loading, setLoading] = useState(false)
     const [submitted, setSubmitted] = useState(false)
     const [profile, setProfile] = useState([])
-
-// console.log(user.email, '-----richmond-----')
 
 
     const handleShowHide = () => {
@@ -147,7 +133,6 @@ const Modal = ({closeModal, profilePicture}) => {
                 </div>
                     ) : (
                 <div className="end" >
-                    {/* <div class="loader"></div> */}
                     <input type="button" value="Update" className="update" onClick={handleSubmit}/>
                 </div>
                     )
