@@ -85,13 +85,16 @@ New Password and Confirm New Password.
 
 # Pages
 
-## Sigm Up Page
+## Register Page
 This is where a user registers for access to original content from Spark.
+![Register](Readme-Images/Register-Page.png)
 ## Log In Page
 This is where a registed user can resume their access to Sparks platform.
+![LogIn](Readme-Images/SignIn-Page.png)
 
 ## The Home, Shows and Movies Pages
 These pages are where spark displays its available content to the authenticated user. It shows film, shows and content that has been made available by spark as long as the user is authenticated. 
+![HomePage](Readme-Images/Home-Page.png)
 
 The Pages Contain the following components that we discussed earlier.
 -   The Nav Bar: The Navigation Bar is at the top of the application, it helps to navigate the web pages.
@@ -102,13 +105,21 @@ The Pages Contain the following components that we discussed earlier.
 ## Watch Page
 This is where an authenticated user can watch the content.
 If a user selects a film of their choosing they are directed to the watch page with that particular content's information.
+![WatchPage1](Readme-Images/WatchPage-1.png)
+![WatchPage2](Readme-Images/WatchPage-2.png)
+![WatchPage3](Readme-Images/WatchPage-3.png)
 
 ## Account Page
 The Account Page is where the user can find information about themselves.
 Information such as Name, Date Joined, Card Details, etc.
+![Account](Readme-Images/Account-Page.png)
 
 ## Search Page
 This page shows a list of movies a user can filter through if they have a perticular movie in mind to search for. It can be activated when the searchbar is clicked.
+![Search](Readme-Images/Search-Page.png)
+## Content Page
+This page shows the information of the content and its list of content.
+![Content](Readme-Images/Content-Page.png)
 
 ## Available Scripts
 
